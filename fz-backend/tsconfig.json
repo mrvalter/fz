@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "paths": {
+      "@/*": ["./src/*"]
+    },    
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "noFallthroughCasesInSwitch": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
