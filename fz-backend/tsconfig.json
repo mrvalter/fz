@@ -1,25 +1,24 @@
 {
   "compilerOptions": {
-    "types": ["jest", "node"],
-    "moduleResolution": "bundler",
-    "module": "ESNext",
-    "paths": {
-      "@/*": ["./src/*"]
-    },    
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "incremental": true,
-    "noFallthroughCasesInSwitch": true,
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "strictPropertyInitialization": false
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",          // ← важно: папка для выходных файлов
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,     // ← добавьте, если нет
+    "resolveJsonModule": true    // ← добавьте, если нет
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
